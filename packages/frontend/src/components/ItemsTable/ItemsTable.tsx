@@ -13,7 +13,7 @@ const ItemsTable: React.FC<ItemsTableProps> = ({ items }) => {
           <thead className="bg-gray-100 border-b">
             <tr>
               <th className="p-2 text-left">Product</th>
-              <th className="p-2 text-left">Name</th>
+              <th className="p-2 text-left">Brand</th>
               <th className="p-2 text-left">Size</th>
               <th className="p-2 text-left">Price</th>
             </tr>
@@ -35,3 +35,4 @@ const ItemsTable: React.FC<ItemsTableProps> = ({ items }) => {
 };
 
 export default ItemsTable;
+
