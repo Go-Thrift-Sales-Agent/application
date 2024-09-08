@@ -62,16 +62,14 @@ The project is organised into the following structure:
 
 ## Setup and Running Locally
 
-### Prerequisites
-
-- Node.js (v14 or later)
-- npm or yarn
-
 ### Installation
 
-1. **Clone the Repository**:
+1. **Get Started**:
 
-   ```bash
+   ```
    git clone <repository-url>
    cd <repository-directory>
+   npm install
+   npx sst secret set OpenAiKey <OPEN_AI_TEST_KEY>
+   npx sst dev
    ```
