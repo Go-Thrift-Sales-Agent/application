@@ -7,6 +7,10 @@ declare module "sst" {
       "type": "sst.aws.ApiGatewayV2"
       "url": string
     }
+    "Frontend": {
+      "type": "sst.aws.StaticSite"
+      "url": string
+    }
     "OpenAiKey": {
       "type": "sst.sst.Secret"
       "value": string
