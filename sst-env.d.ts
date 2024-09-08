@@ -7,9 +7,9 @@ declare module "sst" {
       "type": "sst.aws.ApiGatewayV2"
       "url": string
     }
-    "Uploads": {
-      "name": string
-      "type": "sst.aws.Bucket"
+    "OpenAiKey": {
+      "type": "sst.sst.Secret"
+      "value": string
     }
   }
 }
