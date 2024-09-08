@@ -2,7 +2,7 @@ import OpenAI from "openai";
 import { Resource } from "sst";
 
 const openai = new OpenAI({
-    apiKey: "",
+    apiKey: Resource.OpenAiKey.value,
 });
 
 export module Recommendations {
