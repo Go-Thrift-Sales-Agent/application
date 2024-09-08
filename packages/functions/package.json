@@ -2,7 +2,7 @@
   "name": "@sales-agent/functions",
   "version": "0.0.0",
   "dependencies": {
-    "@sales-agent/core": "*",
+    "@monorepo-template/core": "*",
     "sst": "*"
   },
   "devDependencies": {
