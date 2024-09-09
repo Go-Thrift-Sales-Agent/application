@@ -3,7 +3,7 @@
 export default $config({
   app(input) {
     return {
-      name: "ai-fashion",
+      name: "fashion-ai",
       removal: input?.stage === "production" ? "retain" : "remove",
       home: "aws",
     };

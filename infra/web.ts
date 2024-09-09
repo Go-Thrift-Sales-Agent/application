@@ -1,4 +1,5 @@
 import { api } from "./api";
+
 const region = aws.getRegionOutput().name;
 
 export const frontend = new sst.aws.StaticSite("Frontend", {
