@@ -19,7 +19,7 @@ I chose the OpenAI API due to its advanced natural language processing capabilit
 ### Dashboard
 
 - **Personalised Recommendations**: Displays fashion items based on user inputs such as name, age, gender, style preference, fit, and budget.
-- **Organised Layout**: Clear presentation of recommendations, including item type, brand, color, size, price, and purchase links.
+- **Organised Layout**: Clear presentation of recommendations, including item type, brand, size and price.
 - **User Input Form**: Collects user preferences for generating recommendations.
 - **Handling States**: Manages loading and error states effectively, providing user feedback.
 
@@ -62,16 +62,12 @@ The project is organised into the following structure:
 
 ## Setup and Running Locally
 
-### Prerequisites
+**Get Started**:
 
-- Node.js (v14 or later)
-- npm or yarn
-
-### Installation
-
-1. **Clone the Repository**:
-
-   ```bash
-   git clone <repository-url>
-   cd <repository-directory>
-   ```
+```
+git clone <repository-url>
+cd <repository-directory>
+npm install
+npx sst secret set OpenAiKey <OPEN_AI_TEST_KEY>
+npx sst dev
+```
