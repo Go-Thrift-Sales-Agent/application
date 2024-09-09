@@ -36,7 +36,9 @@ export function useForm(options: UseFormOptions = {}) {
     setError(null);
 
     try {
+      // Convert form data into URL query string parameters
       const params = new URLSearchParams(Object.entries(formData) as [string, string][]).toString();
+      // Make a GET request to the API with the form data as query parameters
       const response = await API.get('api', `/ai/recommendations?${params}`, {});
       const parsedResult: RecommendationsResponse = JSON.parse(response.result);
       setRecommendations(parsedResult);

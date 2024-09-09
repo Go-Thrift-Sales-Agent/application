@@ -14,15 +14,11 @@ export module Recommendations {
         fitInformation: string,
         budgetRange: string
     ) {
-        console.log("name", name);
-        console.log("age", age);
-        console.log("gender", gender);
-        console.log("stylePreference", stylePreference);
-        console.log("fitInformation", fitInformation);
-        console.log("budgetRange", budgetRange);
 
+        // Construct a prompt based on the user's input for the OpenAI model
         const userPrompt = `My name is ${name}. I am ${age} years old, ${gender}, and I prefer a ${stylePreference} style. I have a ${fitInformation} body type, and my budget is ${budgetRange}.`;
 
+        // Send a request to the OpenAI API to generate fashion recommendations based on the user's input
         const completion = await openai.chat.completions.create({
             messages: [
               {
@@ -44,9 +40,10 @@ export module Recommendations {
             model: "gpt-3.5-turbo",
           });
 
+          // Extract the content from the OpenAI API response
           const content = completion.choices[0].message.content;
 
-          console.log("Response content:", content);
-          return content;
+          // Return the generated content, which includes fashion recommendations
+          return content;`
     }
 }
