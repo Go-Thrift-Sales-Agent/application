@@ -6,8 +6,6 @@ This project is a web application that provides personalised fashion recommendat
 
 ## Demo
 
-You can view a live demo of the application here: [Live Demo](https://d273zjepdp7s3q.cloudfront.net)
-
 ## API Integration Choice
 
 ### OpenAI API
